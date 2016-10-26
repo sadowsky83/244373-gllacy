@@ -22,10 +22,18 @@
           </ul>
         </nav>
         <div class="user-block">
-          <button class="search" type="button">Поиск</button>
+          <label>
+            <input class="search" type="button" value="Поиск">
+          </label>
           <a class="login" href="#">Вход</a>
           <a class="bascet" href="#">Корзина</a>
         </div>
+      </div>
+      <div class="block time">
+        <p>С 10 до 20, ежедневно</p>
+      </div>
+      <div class="block phone">
+        <p>8 812 450-25-25</p>
       </div>
     </header>
     <main class="container">
@@ -35,183 +43,171 @@
           <li><a href="#">Каталог</a></li>
           <li><a href="#">Сливочное</a></li>
         </ul>
-        <div class="block time">
-          <p>С 10 до 20, ежедневно</p>
-        </div>
-        <div class="block phone">
-          <p>8 812 450-25-25</p>
-        </div>
       </div>
       <h1>Сливочное мороженое</h1>
       <div class="choice">
-        <div class="sort">
-          <label>
+        <form class="select" action="/echo" method="post">
+          <div class="sort">
+            <label>
             Сортировка:
               <select id="sort" name="sort">
                 <option value="pop">по популярности</option>
                 <option value="price">по цене</option>
               </select>
-          </label>
-        </div>
-        <div class="price">
-          <label>
-            Цена: 100 руб.- 500 руб.
-            <input type="range" id="price" name="price" min="100"
-            max="500" step="5">
-          </label>
-        </div>
-        <div class="fat">
-          <label>
-                <input type="radio" name="fat" value="0">
-                0%
+            </label>
+          </div>
+          <div class="price">
+            <label>
+              Цена: 100 руб.- 500 руб.
+              <input type="range" id="price" name="price" min="100"
+              max="500" step="5">
+            </label>
+          </div>
+          <div class="fat">
+            <label>
+              <input type="radio" name="fat" value="0">0%
             </label>
             <label>
-                <input type="radio" name="fat" value="<10">
-                до 10%
+              <input type="radio" name="fat" value="<10">до 10%
             </label>
             <label>
-                <input type="radio" name="fat" value="<30">
-                до 30%
+              <input type="radio" name="fat" value="<30">до 30%
             </label>
             <label>
-                <input type="radio" name="fat" value=">30">
-                выше 30%
+              <input type="radio" name="fat" value=">30">выше 30%
             </label>
-        </div>
-        <div class="filler">
-          <input type="checkbox" id="choco" name="choco">
-          <label for="choco">шоколадные</label>
-          <input type="checkbox" id="sugar" name="sugar">
-          <label for="sugar">сахарные присыпки</label>
-          <input type="checkbox" id="frut" name="frut">
-          <label for="frut">фрукты</label>
-          <input type="checkbox" id="syrup" name="syrup">
-          <label for="syrup">сиропы</label>
-          <input type="checkbox" id="jam" name="jam">
-          <label for="jam">джемы</label>
-        </div>
-        <button class="greybtn" type="button">Применить</button>
+          </div>
+          <div class="filler">
+            <input type="checkbox" id="choco" name="choco">
+            <label for="choco">шоколадные</label>
+            <input type="checkbox" id="sugar" name="sugar">
+            <label for="sugar">сахарные присыпки</label>
+            <input type="checkbox" id="frut" name="frut">
+            <label for="frut">фрукты</label>
+            <input type="checkbox" id="syrup" name="syrup">
+            <label for="syrup">сиропы</label>
+            <input type="checkbox" id="jam" name="jam">
+            <label for="jam">джемы</label>
+          </div>
+          <input type="submit" value="Применить">
+        </form>
       </div>
       <div class="product_list">
         <div class="product">
-          <img class="ice" src="/orangecream.jpg" alt="Сливочное с апельсином">
+          <img class="ice" src="/orangecream.jpg" alt="Сливочное с апельсином"
+          width="100" height="100">
           <p><span class="price">310&#8381;</span>/кг</p>
           <a class="product_name" href="#">Сливочное с апельсиновым
-          <br>
           джемом и цитрусовой стружкой</a>
           <div class="hidebtn">
-            <button class="btn" type="button">Быстрый просмотр</button>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </div>
         </div>
         <div class="product">
-          <img class="ice" src="/coffeecream.jpg" alt="Сливочное с кофе">
+          <img class="ice" src="/coffeecream.jpg" alt="Сливочное с кофе"
+          width="100" height="100">
           <p><span class="price">380&#8381;</span>/кг</p>
           <a class="product_name" href="#">Сливочно-кофейное с кусочками
           <br>
           шоколада</a>
           <div class="hidebtn">
-            <button class="btn" type="button">Быстрый просмотр</button>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </div>
         </div>
         <div class="product">
-          <img class="ice" src="/strawberrycream.jpg" alt="Сливочное с клубникой">
+          <img class="ice" src="/strawberrycream.jpg" alt="Сливочное с
+          клубникой" width="100" height="100">
           <p><span class="price">355&#8381;</span>/кг</p>
           <a class="product_name" href="#">Сливочно-клубничное с
-          <br>
           присыпкой из белого шоколада</a>
           <div class="hidebtn">
-            <button class="btn" type="button">Быстрый просмотр</button>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </div>
         </div>
         <div class="product">
-          <img class="ice" src="/cremebruleecream.jpg" alt="Сливочное крем-брюле">
+          <img class="ice" src="/cremebruleecream.jpg" alt="Сливочное крем-
+          брюле" width="100" height="100">
           <p><span class="price">415&#8381;</span>/кг</p>
           <a class="product_name" href="#">Сливочное крем-брюле с
-          <br>
           карамельной подливкой</a>
           <div class="hidebtn">
-            <button class="btn" type="button">Быстрый просмотр</button>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </div>
         </div>
         <div class="product">
-          <img class="ice" src="/cranberriescream.jpg" alt="Сливосное с брусничным джемом">
+          <img class="ice" src="/cranberriescream.jpg" alt="Сливосное с
+          брусничным джемом" width="100" height="100">
           <p><span class="price">415&#8381;</span>/кг</p>
           <a class="product_name" href="#">Сливочное с брусничным
-          <br>
           джемом</a>
         </div>
         <div class="product">
-          <img class="ice" src="/blueberriescream.jpg" alt="Сливочно-черничное с цельными
-          ягодами черники">
+          <img class="ice" src="/blueberriescream.jpg" alt="Сливочно-черничное
+          с цельными ягодами черники" width="100" height="100">
           <p><span class="price">415&#8381;</span>/кг</p>
           <a class="product_name" href="#">Сливочно-черничное с цельными
-          <br>
           ягодами черники</a>
           <div class="hidebtn">
-            <button class="btn" type="button">Быстрый просмотр</button>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </div>
         </div>
         <div class="product">
           <img class="ice" src="/limoncream.jpg" alt="Сливочно-лимонное с
-          карамельной присыпкой">
+          карамельной присыпкой"  width="100" height="100">
           <p><span class="price">415&#8381;</span>/кг</p>
           <a class="product_name" href="#">Сливочно-лимонное с
-          <br>
           карамельной присыпкой</a>
           <div class="hidebtn">
-            <button class="btn" type="button">Быстрый просмотр</button>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </div>
         </div>
         <div class="product">
           <img class="ice" src="/chococream.jpg" alt="Сливочное с шоколадной
-          стружкой">
+          стружкой"  width="100" height="100">
           <p><span class="price">415&#8381;</span>/кг</p>
           <a class="product_name" href="#">Сливочное с шоколадной
-          <br>
           стружкой</a>
           <div class="hidebtn">
-            <button class="btn" type="button">Быстрый просмотр</button>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </div>
         </div>
         <div class="product">
           <img class="ice" src="/vanillacream.jpg" alt="Сливочно-ванильное с
-          кусочками шоколада">
+          кусочками шоколада"  width="100" height="100">
           <p><span class="price">415&#8381;</span>/кг</p>
           <a class="product_name" href="#">Сливочно-ванильное с
-          <br>
           кусочками шоколада</a>
           <div class="hidebtn">
-            <button class="btn" type="button">Быстрый просмотр</button>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </div>
         </div>
         <div class="product">
           <img class="ice" src="/mentolcream.jpg" alt="Сливочное с ментоловым
-          сиропом">
+          сиропом" width="100" height="100">
           <p><span class="price">415&#8381;</span>/кг</p>
           <a class="product_name" href="#">Сливочное с ментоловым
-          <br>
           сиропом</a>
           <div class="hidebtn">
-            <button class="btn" type="button">Быстрый просмотр</button>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </div>
         </div>
         <div class="product">
           <img class="ice" src="/blackchococream.jpg" alt="Сливочное с кусочками черного
-          шоколада">
+          шоколада" width="100" height="100">
           <p><span class="price">415&#8381;</span>/кг</p>
           <a class="product_name" href="#">Сливочное с кусочками черного
-          <br>
           шоколада</a>
           <div class="hidebtn">
-            <button class="btn" type="button">Быстрый просмотр</button>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </div>
         </div>
         <div class="product">
-          <img class="ice" src="/mintcream.jpg" alt="Сливочное с мятным сиропом">
+          <img class="ice" src="/mintcream.jpg" alt="Сливочное с мятным сиропом"
+          width="100" height="100">
           <p><span class="price">415&#8381;</span>/кг</p>
           <a class="product_name" href="#">Сливочное с мятным сиропом</a>
           <div class="hidebtn">
-            <button class="btn" type="button">Быстрый просмотр</button>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </div>
         </div>
       </div>
@@ -234,28 +230,19 @@
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
         </section>
         <section class="info">
-          <table>
-            <tr>
-              <td>
-                <a class="link" href="#">Для поставщиков</a>
-              </td>
-              <td>
-                <a class="link" href="#">Наши документы</a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a class="link" href="#">О производстве</a>
-              </td>
-              <td>
-                <a class="link" href="#">Экологические стандарты</a>
-              </td>
-            </tr>
-          </table>
+          <div>
+            <a class="link" href="#">&#10084; Для поставщиков</a>
+            <a class="link" href="#">Наши документы</a>
+          </div>
+          <div>
+            <a class="link" href="#">О производстве</a>
+            <a class="link" href="#">Экологические стандарты</a>
+          </div>
         </section>
         <section class="footer-copyright">
-          <p>Сделано в </p>
-          <a class="link" href="https://htmlacademy.ru">HTML Academy</a>
+          <p>Сделано в
+            <a class="link" href="https://htmlacademy.ru">HTML Academy</a>
+          </p>
         </section>
       </div>
     </footer>
