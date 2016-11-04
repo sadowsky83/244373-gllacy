@@ -1,8 +1,155 @@
+html,
+body {
+  min-width: 900px;
+  margin: 0;
+  padding: 0;
+}
+
 body {
     font-size: 100%;
     color: #ffffff;
     background-color: #849d8f;
   }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.main-header {
+  outline: 2px solid red;
+}
+
+.container {
+  min-width: 900px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  outline: 2px solid red;
+}
+
+.text_logo {
+  float: left;
+  outline: 2px solid red;
+}
+
+.main-navigation {
+  float: left;
+  width: 500px;
+  outline: 2px solid red;
+}
+
+.user-block {
+  float: right;
+  width: 210px;
+  outline: 2px solid red;
+}
+
+.block {
+  float: right;
+  width: 210px;
+  text-align: right;
+  clear:right;
+  outline: 2px solid red;
+}
+
+.slider {
+  width: 860px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 2px solid red;
+}
+
+.index-logo {
+  width: 647px;
+  height: 584px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.slider_text {
+  position:absolute;
+  width: 670px;
+  height: 120px;
+  margin-top: 290px;
+  margin-left: 95px;
+  outline: 2px solid red;
+}
+
+.take-two {
+  position:absolute;
+  width: 280px;
+  height: 65px;
+  margin-top: -150px;
+  margin-left: 280px;
+  outline: 2px solid red;
+}
+
+.select-dot {
+  position:absolute;
+  margin-top: -130px;
+  width: 70px;
+  height: 25px;
+  outline: 2px solid red;
+}
+
+.gift {
+  margin-right: auto;
+  margin-left: auto;
+  width: 860px;
+  height: 230px;
+  outline: 2px solid red;
+}
+
+.gift-left {
+  float: left;
+  width: 420px;
+  height: 230px;
+  outline: 2px solid red;
+}
+
+.gift-right {
+  float: right;
+  width: 420px;
+  height: 230px;
+  outline: 2px solid red;
+}
+
+.products_list {
+  width: 860px;
+  height: 290px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 2px solid red;
+}
+
+.product {
+  float: left;
+  width: 200px;
+  height: 290px;
+  margin-left: 20px;
+  outline: 2px solid red;
+}
+
+.product:nth-child(1) {
+  margin-left: 0px;
+}
+
+.hit {
+  position: absolute;
+}
+
+.price {
+position: relative;
+top: -55px;
+}
+
+.product_name {
+
+}
+
+
 
 h1 {
   font-size: 60px;
