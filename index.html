@@ -10,7 +10,7 @@
 <body>
   <header class="main-header">
     <div class="container clearfix">
-      <div  class="text_logo">
+      <div class="text_logo">
         <img src="img/Logo_154x64.svg" width="154" height="64" alt="Gllacy shop">
       </div>
       <nav class="main-navigation">
@@ -40,14 +40,10 @@
         <p>8 812 450-25-25</p>
       </div>
     </div>
-
   </header>
   <main class="container clearfix">
     <div class="slider">
       <h1 class="slider_text">Крем-брюле и пломбир с малиновым джемом</h1>
-      <div class="index-logo">
-      <img class="slider_shots" src="img/slider_ice_cream1_647x584.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
-    </div>
       <a class="btn take-two" href="#">Давайте оба!</a>
       <div class="select-dot">
         <ul>
@@ -61,12 +57,12 @@
       <section class="gift-left clearfix">
         <h2>Малинка даром!</h2>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья</p>
-        <a class="btn" href="#">Хочу варенье!</a>
+        <a class="btn_gift" href="#">Хочу варенье!</a>
       </section>
       <section class="gift-right clearfix">
         <h2>Шоколадки даром!</h2>
         <p>При покупке 2 кг пломбира в ваш заказ упаковку вкуснейшей шоколадной присыпки</p>
-        <a class="btn" href="#">Хочу шоколадки!</a>
+        <a class="btn_gift" href="#">Хочу шоколадки!</a>
       </section>
     </article>
     <div class="products_list">
@@ -101,44 +97,45 @@
         карамельной подливкой</a>
       </div>
     </div>
-    <div class="aboutus">
+    <div class="aboutus clearfix">
       <h3>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого
         собственного производства на развес</h3>
-      <div class="info">
+      <div class="info left_top">
         <img class="info_logo" src="img/icecream_logo_49x49.png" width="49" height="49" alt="ЛогоМороженое">
         <p>Все наше мороженое изготавливается на собственном проиводстве, с использованием современного оборудования и проверенных временем технологий.</p>
       </div>
-      <div class="info">
+      <div class="info right_top">
         <img class="info_logo" src="img/cow_logo_48x49.png" width="49" height="49" alt="ЛогоКорова">
         <p>Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
       </div>
-      <div class="info">
+      <div class="info left_bottom">
         <img class="info_logo" src="img/leaf_logo_49x49.png" width="49" height="49" alt="ЛогоЛист">
         <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
         </p>
       </div>
-      <div class="info">
+      <div class="info right_bottom">
         <img class="info_logo" src="img/term_logo_48x49.png" width="49" height="49" alt="ЛогоИнфо">
         <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.
         </p>
       </div>
     </div>
-    <div class="news">
-      <b>Новое в нашем блоге</b>
-      <a class="news_cont" href="#">10 способов сервировки
+    <div class="news_post">
+      <div class="news">
+        <b>Новое в нашем блоге</b>
+        <a class="news_cont" href="#">10 способов сервировки
       фруктовых щербетов
       к столу
       </a>
-    </div>
-    <div class="post">
-      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно=))</p>
-      <form action="/echo" method="post">
-        <input class="email" type="email" name="email">
-        <input type="submit" value="Отправить">
-      </form>
+      </div>
+      <div class="post">
+        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно=))</p>
+        <form action="/echo" method="post">
+          <input class="email" type="email" name="email">
+          <input type="submit" value="Отправить">
+        </form>
+      </div>
     </div>
     <div class="location">
-      <img class="info_logo" src="img/map_1200x430.jpg" width="1200" height="430" alt="Карта">
       <div class="adress">
         <span>Адрес главного офиса и офлайн магазина:
           <strong>ул. Большая Конюшеная
@@ -153,17 +150,19 @@
     </div>
   </main>
   <footer class="main-footer">
-    <div class="container">
+    <div class="container clearfix">
       <section class="footer-social">
         <a class="social-btn social-btn-tw" href="#"><img src="img/tw_logo_33x32.png" width="32" height="32" alt="Твиттер"></a>
         <a class="social-btn social-btn-inst" href="#"><img src="img/inst_logo_32x32.png" width="32" height="32" alt="Инстаграм"></a>
         <a class="social-btn social-btn-fb" href="#"><img src="img/fb_logo_32x32.png" width="32" height="32" alt="Фейсбук"></a>
         <a class="social-btn social-btn-vk" href="#"><img src="img/vk_logo_32x32.png" width="32" height="32" alt="Вконтакте"></a>
       </section>
-      <section class="info">
-        <div>
+      <section class="info_doc">
+        <div class="documents">
           <a class="link" href="#">&#10084; Для поставщиков</a>
           <a class="link" href="#">Наши документы</a>
+          <a class="link" href="#">О производсте</a>
+          <a class="link" href="#">Экологические стандарты</a>
         </div>
       </section>
       <section class="footer-copyright">
@@ -176,5 +175,3 @@
 </body>
 
 </html>
-
-<!-- Картинки некоторые прикрепил временно, скорее всего они пойдут фонами в блоки через css. По моему так проще будет. Фоны в слайдерах тоже через css добавлю -->

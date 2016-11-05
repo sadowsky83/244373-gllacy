@@ -1,23 +1,24 @@
-html,
-body {
+html, body {
   min-width: 900px;
   margin: 0;
   padding: 0;
 }
 
 body {
-    font-size: 100%;
-    color: #ffffff;
-    background-color: #849d8f;
-  }
+  font-size: 100%;
+  color: #ffffff;
+  background-color: #849d8f;
+}
 
-  .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .main-header {
+  min-width: 900px;
+  height: 120px;
   outline: 2px solid red;
 }
 
@@ -25,100 +26,143 @@ body {
   min-width: 900px;
   margin: 0 auto;
   padding: 10px 20px;
-  outline: 2px solid red;
 }
 
 .text_logo {
   float: left;
-  outline: 2px solid red;
+  width: 155px;
+  height: 65px;
 }
 
 .main-navigation {
   float: left;
-  width: 500px;
-  outline: 2px solid red;
+  width: 400px;
 }
 
+.main-navigation li {
+  display: inline-block;
+}
+
+.way li {
+  display: inline-block;
+}
+
+.first {
+  display: block;
+  float: left;
+  width: 335px;
+  min-height: 18px;
+  margin-top: 70px;
+  margin-left: -590px;
+}
 .user-block {
   float: right;
-  width: 210px;
-  outline: 2px solid red;
+  width: 260px;
+  height: 30px;
 }
 
 .block {
   float: right;
   width: 210px;
   text-align: right;
-  clear:right;
-  outline: 2px solid red;
+  clear: right;
 }
 
 .slider {
-  width: 860px;
-  height: 600px;
+  width: 900px;
+  height: 500px;
+  margin-top: 0;
   margin-right: auto;
   margin-left: auto;
+  background-image: url("../img/slider_ice_cream1_647x584.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  overflow: visible;
   outline: 2px solid red;
-}
-
-.index-logo {
-  width: 647px;
-  height: 584px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .slider_text {
-  position:absolute;
+  position: relative;
   width: 670px;
   height: 120px;
-  margin-top: 290px;
-  margin-left: 95px;
-  outline: 2px solid red;
+  top: 290px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
 .take-two {
-  position:absolute;
+  display: block;
+  position: relative;
   width: 280px;
   height: 65px;
-  margin-top: -150px;
-  margin-left: 280px;
+  margin-right: auto;
+  margin-left: auto;
+  top: 260px;
   outline: 2px solid red;
 }
 
 .select-dot {
-  position:absolute;
-  margin-top: -130px;
-  width: 70px;
-  height: 25px;
+  position: relative;
+  width: 80px;
+  height: 20px;
+  top: 200px;
+  outline: 2px solid red;
+}
+
+.select-dot li {
+  display: inline-block;
+}
+
+.choice {
+  margin-right: auto;
+  margin-left: auto;
+  width: 900px;
+  height: 200px;
   outline: 2px solid red;
 }
 
 .gift {
   margin-right: auto;
   margin-left: auto;
-  width: 860px;
-  height: 230px;
+  width: 900px;
+  height: 280px;
   outline: 2px solid red;
 }
 
 .gift-left {
   float: left;
+  margin-top: 30px;
+  margin-left: 20px;
   width: 420px;
   height: 230px;
-  outline: 2px solid red;
+  background-image: url("../img/ruspberry_560x229.png");
+  border-radius: 10px;
 }
 
 .gift-right {
   float: right;
+  margin-top: 30px;
+  margin-right: 20px;
   width: 420px;
   height: 230px;
+  background-image: url("../img/choco_560x229.png");
+  border-radius: 10px;
+}
+
+.btn_gift {
+  display: block;
+  position: relative;
+  width: 165px;
+  height: 45px;
+  bottom: -10px;
+  right: -235px;
   outline: 2px solid red;
 }
 
 .products_list {
-  width: 860px;
-  height: 290px;
+  width: 900px;
+  height: 300px;
   margin-right: auto;
   margin-left: auto;
   outline: 2px solid red;
@@ -127,13 +171,20 @@ body {
 .product {
   float: left;
   width: 200px;
-  height: 290px;
+  height: 270px;
   margin-left: 20px;
+  margin-top: 20px;
   outline: 2px solid red;
 }
 
-.product:nth-child(1) {
-  margin-left: 0px;
+.product a {
+  display: block;
+  position: relative;
+  width: 180px;
+  top: -40px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
 .hit {
@@ -141,15 +192,187 @@ body {
 }
 
 .price {
-position: relative;
-top: -55px;
+  position: relative;
+  top: -55px;
 }
 
-.product_name {
+.product_name {}
 
+.product_list {
+  width: 900px;
+  height: 930px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 2px solid red;
 }
 
+.pages {
+  display:block;
+  float: right;
+  width: 190px;
+  height: 30px;
+  magrin-top: 80px;
+  outline: 2px solid red;
+}
 
+.aboutus {
+  width: 860px;
+  height: 370px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  background-image: url("../img/wafer_734x433.jpg");
+  border-radius: 10px;
+  outline: 2px solid red;
+}
+
+.info {
+  width: 400px;
+  height: 120px;
+  color: #323232;
+  outline: 2px solid red;
+}
+
+.left_top {
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.right_top {
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.left_bottom {
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.right_botom {
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.news_post {
+  width: 900px;
+  height: 220px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+
+.news {
+  float: left;
+  width: 420px;
+  height: 220px;
+  margin-left: 20px;
+  color: #323232;
+  outline: 2px solid red;
+  background-image: url("../img/strawberry_background_560x220.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  border-radius: 10px;
+}
+
+.news b {
+  display: block;
+  position: relative;
+  top: 30px;
+  left: 20px;
+}
+
+.news a {
+  display: block;
+  position: relative;
+  top: 60px;
+  left: 20px;
+  color: #323232;
+}
+
+.post {
+  float: right;
+  width: 420px;
+  height: 220px;
+  margin-right: 20px;
+  color: #323232;
+  outline: 2px solid red;
+  background-image: url("../img/mail_background_560x220.png");
+  background-repeat: no-repeat;
+  background-size: 420px 220px;
+  border-radius: 10px;
+}
+
+.post p {
+  display: block;
+  position: relative;
+  width: 365px;
+  height: 85px;
+  top: 40px;
+  left: 30px;
+}
+
+.location {
+  width: 900px;
+  height: 430px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  color: #323232;
+  background-image: url("../img/map_1200x430.jpg");
+  outline: 2px solid red;
+}
+
+.adress {
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 305px;
+  background-color: #fefefe;
+  border-radius: 10px;
+  top: 60px;
+  left: 580px;
+  z-index: 10;
+}
+
+.main-footer {
+  min-width: 900px;
+  height: 100px;
+  outline: 2px solid red;
+}
+
+.info_doc a {
+  color: #fefefe;
+}
+
+.footer-copyright a {
+  color: #fefefe;
+}
+
+.footer-social {
+  float: left;
+  margin-top: 15px;
+}
+
+.documents {
+  float: left;
+  margin-top: 15px;
+  margin-left: 75px;
+  width: 330px;
+  height: 40px;
+  outline: 2px solid red;
+}
+
+.footer-copyright {
+  float: right;
+  margin-top: 10px;
+  width: 190px;
+  height: 60px;
+  outline: 2px solid red;
+}
 
 h1 {
   font-size: 60px;
