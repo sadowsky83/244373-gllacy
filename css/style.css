@@ -4,6 +4,10 @@ html, body {
   padding: 0;
 }
 
+*, html {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 100%;
   color: #ffffff;
@@ -16,27 +20,49 @@ body {
   clear: both;
 }
 
+.site-wrapper {
+  background-image: url("../img/slider_ice_cream1_647x584.png");
+  background-repeat: no-repeat;
+  background-position: 50% 27.5%;
+}
+
 .main-header {
-  min-width: 900px;
-  height: 120px;
+  min-height: 100px;
   outline: 2px solid red;
 }
 
 .container {
+  min-height: 10px;
   min-width: 900px;
-  margin: 0 auto;
-  padding: 10px 20px;
+  max-width: 1200px;
+  outline: 2px solid red;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.containerfix {
+  min-height: 10px;
+  min-width: 900px;
+  max-width: 1200px;
+  outline: 2px solid red;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .text_logo {
   float: left;
-  width: 155px;
-  height: 65px;
+  width: 150px;
+  height: 62px;
+  margin-top: 10px;
+  margin-left: 15px;
 }
 
 .main-navigation {
   float: left;
-  width: 400px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: -50px;
+  outline: 2px solid red;
 }
 
 .main-navigation li {
@@ -53,42 +79,40 @@ body {
   width: 335px;
   min-height: 18px;
   margin-top: 70px;
-  margin-left: -590px;
 }
+
 .user-block {
   float: right;
-  width: 260px;
-  height: 30px;
+  margin-top: 28px;
+  min-width: 261px;
+  outline: 2px solid red;
 }
 
 .block {
+  display: block;
   float: right;
-  width: 210px;
-  text-align: right;
-  clear: right;
+  padding: 0px;
+  outline: 2px solid red;
 }
 
 .slider {
-  width: 900px;
-  height: 500px;
-  margin-top: 0;
+  position: relative;
+  min-width: 900px;
+  max-width: 1200px;
+  min-height: 510px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url("../img/slider_ice_cream1_647x584.png");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  overflow: visible;
   outline: 2px solid red;
 }
 
 .slider_text {
-  position: relative;
   width: 670px;
   height: 120px;
-  top: 290px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+  padding-top: 280px;
+  outline: 2px solid red;
 }
 
 .take-two {
@@ -98,7 +122,7 @@ body {
   height: 65px;
   margin-right: auto;
   margin-left: auto;
-  top: 260px;
+  top: 155px;
   outline: 2px solid red;
 }
 
@@ -106,7 +130,7 @@ body {
   position: relative;
   width: 80px;
   height: 20px;
-  top: 200px;
+  top: 100px;
   outline: 2px solid red;
 }
 
@@ -115,54 +139,58 @@ body {
 }
 
 .choice {
+  min-width: 900px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  width: 900px;
   height: 200px;
   outline: 2px solid red;
 }
 
 .gift {
+  min-width: 900px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  width: 900px;
-  height: 280px;
+  min-height: 280px;
   outline: 2px solid red;
 }
 
 .gift-left {
+  position: relative;
   float: left;
   margin-top: 30px;
-  margin-left: 20px;
-  width: 420px;
-  height: 230px;
+  margin-left: 2.2%;
+  width: 46.6%;
+  min-height: 230px;
   background-image: url("../img/ruspberry_560x229.png");
   border-radius: 10px;
 }
 
 .gift-right {
-  float: right;
+  position: relative;
+  float: left;
   margin-top: 30px;
-  margin-right: 20px;
-  width: 420px;
-  height: 230px;
+  margin-left: 2.2%;
+  width: 46.6%;
+  min-height: 230px;
   background-image: url("../img/choco_560x229.png");
   border-radius: 10px;
 }
 
 .btn_gift {
-  display: block;
-  position: relative;
+  position: absolute;
+  float: right;
   width: 165px;
   height: 45px;
-  bottom: -10px;
-  right: -235px;
+  bottom: 20px;
+  right: 20px;
   outline: 2px solid red;
 }
 
 .products_list {
-  width: 900px;
-  height: 300px;
+  min-width: 900px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   outline: 2px solid red;
@@ -170,21 +198,25 @@ body {
 
 .product {
   float: left;
-  width: 200px;
-  height: 270px;
-  margin-left: 20px;
+  width: 22.2%;
+  margin-left: 2.2%;
   margin-top: 20px;
   outline: 2px solid red;
+  margin-bottom: 35px;
 }
 
 .product a {
   display: block;
-  position: relative;
-  width: 180px;
+  min-width: 180px;
   top: -40px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+}
+
+.ice {
+  width: 100%;
+  height: 100%;
 }
 
 .hit {
@@ -192,34 +224,35 @@ body {
 }
 
 .price {
-  position: relative;
-  top: -55px;
+  float: left;
 }
 
-.product_name {}
+.product_name {
+  float: left;
+}
 
 .product_list {
-  width: 900px;
-  height: 930px;
+  min-width: 900px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   outline: 2px solid red;
 }
 
 .pages {
-  display:block;
   float: right;
   width: 190px;
   height: 30px;
-  magrin-top: 80px;
+  margin-top: 60px;
   outline: 2px solid red;
 }
 
 .aboutus {
-  width: 860px;
-  height: 370px;
-  margin-right: auto;
-  margin-left: auto;
+  min-width: 860px;
+  max-width: 1200px;
+  min-height: 375px;
+  margin-right: 2.2%;
+  margin-left: 2.2%;
   margin-bottom: 40px;
   background-image: url("../img/wafer_734x433.jpg");
   border-radius: 10px;
@@ -227,49 +260,29 @@ body {
 }
 
 .info {
-  width: 400px;
-  height: 120px;
+  width: 46.6%;
+  min-height: 120px;
   color: #323232;
   outline: 2px solid red;
-}
-
-.left_top {
   float: left;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-.right_top {
-  float: right;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.left_bottom {
-  float: left;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-.right_botom {
-  float: right;
-  margin-right: 20px;
+  margin-left: 2.2%;
   margin-bottom: 20px;
 }
 
 .news_post {
-  width: 900px;
-  height: 220px;
+  min-width: 900px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
+  height: 220px;
   margin-bottom: 40px;
 }
 
 .news {
   float: left;
-  width: 420px;
+  width: 46.6%;
   height: 220px;
-  margin-left: 20px;
+  margin-left: 2.2%;
   color: #323232;
   outline: 2px solid red;
   background-image: url("../img/strawberry_background_560x220.png");
@@ -294,53 +307,58 @@ body {
 }
 
 .post {
-  float: right;
-  width: 420px;
+  float: left;
+  width: 46.6%;
   height: 220px;
-  margin-right: 20px;
+  margin-left: 2.2%;
   color: #323232;
   outline: 2px solid red;
   background-image: url("../img/mail_background_560x220.png");
   background-repeat: no-repeat;
-  background-size: 420px 220px;
+  background-position: right;
+  background-size: 100% 100%;
   border-radius: 10px;
 }
 
 .post p {
   display: block;
-  position: relative;
   width: 365px;
   height: 85px;
-  top: 40px;
-  left: 30px;
+  margin-top: 10px;
 }
 
 .location {
-  width: 900px;
-  height: 430px;
+  min-width: 900px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
+  height: 430px;
   margin-bottom: 10px;
   color: #323232;
   background-image: url("../img/map_1200x430.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-hight: 100%;
   outline: 2px solid red;
 }
 
 .adress {
-  display: block;
-  position: relative;
   width: 300px;
   height: 305px;
   background-color: #fefefe;
   border-radius: 10px;
-  top: 60px;
-  left: 580px;
+  margin-top: 60px;
+  float: right;
+  margin-right: 2.2%;
   z-index: 10;
 }
 
 .main-footer {
   min-width: 900px;
-  height: 100px;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 100px;
   outline: 2px solid red;
 }
 
@@ -354,6 +372,7 @@ body {
 
 .footer-social {
   float: left;
+  margin-left: 2.2%;
   margin-top: 15px;
 }
 
@@ -362,7 +381,7 @@ body {
   margin-top: 15px;
   margin-left: 75px;
   width: 330px;
-  height: 40px;
+  min-height: 40px;
   outline: 2px solid red;
 }
 
@@ -370,22 +389,29 @@ body {
   float: right;
   margin-top: 10px;
   width: 190px;
-  height: 60px;
+  min-height: 60px;
   outline: 2px solid red;
 }
 
 h1 {
   font-size: 60px;
   line-height: 60.35px;
+  margin: 0px;
 }
 
 h2 {
   font-size: 35px;
   line-height: 41px;
+  margin: 0px;
 }
 
 h3 {
   font-size: 24px;
   line-height: 30px;
   color: #323232;
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
 }
