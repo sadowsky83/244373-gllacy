@@ -9,7 +9,10 @@ html, body {
 }
 
 body {
-  font-size: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  font-family: Roboto, Helvetica, sans-serif;
   color: #ffffff;
   background-color: #849d8f;
 }
@@ -23,7 +26,7 @@ body {
 .site-wrapper {
   background-image: url("../img/slider_ice_cream1_647x584.png");
   background-repeat: no-repeat;
-  background-position: 50% 27.5%;
+  background-position: 50% 26%;
 }
 
 .main-header {
@@ -59,14 +62,42 @@ body {
 
 .main-navigation {
   float: left;
-  margin-top: 15px;
-  margin-left: 15px;
+  margin-top: 20px;
+  margin-left: 18px;
   margin-right: -50px;
-  outline: 2px solid red;
 }
 
 .main-navigation li {
   display: inline-block;
+}
+
+.main-menu {
+  width: 415px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.main-menu li {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.main-menu li a {
+  display: block;
+  padding: 9px 15px 9px 14px;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.underline {
+  border-bottom: 1px solid #c6d8ce;
 }
 
 .way li {
@@ -83,16 +114,31 @@ body {
 
 .user-block {
   float: right;
-  margin-top: 28px;
   min-width: 261px;
+  margin-top: 23px;
+  margin-right: 2.2%;
   outline: 2px solid red;
 }
 
 .block {
+  min-width: 150px;
+  min-height: 20px;
+  font-weight: bold;
   display: block;
-  float: right;
-  padding: 0px;
+  margin-right: 2.2%;
   outline: 2px solid red;
+}
+
+.time {
+  font-size: 14px;
+  line-height: 16px;
+  float: right;
+}
+
+.phone {
+  font-size: 22px;
+  line-height: 24px;
+  float: right;
 }
 
 .slider {
@@ -110,20 +156,53 @@ body {
   height: 120px;
   margin-right: auto;
   margin-left: auto;
-  text-align: center;
+  font-size: 60px;
+  line-height: 60px;
+  text-decoration: bold;
   padding-top: 280px;
   outline: 2px solid red;
 }
 
 .take-two {
-  display: block;
   position: relative;
   width: 280px;
-  height: 65px;
+  height: 60px;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 8px;
   top: 155px;
+  font-size: 32px;
+  line-height: 44px;
   outline: 2px solid red;
+}
+
+.btn {
+  display: block;
+  border-radius: 88px;
+  box-sizing: border-box;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-top: 1px solid #f47c5c;
+  border-top: 1px solid #cc6b61;
+  background: linear-gradient(bottom, #e74a35, #f26843);
+  background: linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 2px 2px rgba(172,16,0,0.64);
+}
+
+.btn:hover {
+  background: linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.btn:active {
+  background: linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .select-dot {
@@ -185,6 +264,7 @@ body {
   height: 45px;
   bottom: 20px;
   right: 20px;
+  padding-top: 10px;
   outline: 2px solid red;
 }
 
@@ -256,17 +336,67 @@ body {
   margin-bottom: 40px;
   background-image: url("../img/wafer_734x433.jpg");
   border-radius: 10px;
-  outline: 2px solid red;
+}
+
+.info-head {
+  display: block;
+  padding: 24px 20px 6px 20px;
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
 }
 
 .info {
+  position: relative;
+  padding-left: 55px;
+  padding-top: 20px;
   width: 46.6%;
-  min-height: 120px;
+  min-height: 130px;
   color: #323232;
-  outline: 2px solid red;
   float: left;
   margin-left: 2.2%;
   margin-bottom: 20px;
+}
+
+.info1::before {
+  content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 49px;
+    height: 49px;
+    background: url(../img/icecream_logo_49x49.png) no-repeat;
+}
+
+.info2::before {
+  content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 49px;
+    height: 49px;
+    background: url(../img/cow_logo_48x49.png) no-repeat;
+}
+
+.info3::before {
+  content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 49px;
+    height: 49px;
+    background: url(../img/leaf_logo_49x49.png) no-repeat;
+}
+
+.info4::before {
+  content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 49px;
+    height: 49px;
+    background: url(../img/term_logo_48x49.png) no-repeat;
 }
 
 .news_post {
@@ -284,7 +414,6 @@ body {
   height: 220px;
   margin-left: 2.2%;
   color: #323232;
-  outline: 2px solid red;
   background-image: url("../img/strawberry_background_560x220.png");
   background-repeat: no-repeat;
   background-position: right;
@@ -292,18 +421,20 @@ body {
 }
 
 .news b {
-  display: block;
-  position: relative;
-  top: 30px;
-  left: 20px;
+      display: block;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 22px 0 5px 20px;
 }
 
 .news a {
   display: block;
-  position: relative;
-  top: 60px;
-  left: 20px;
-  color: #323232;
+    margin-left: 20px;
+    width: 290px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: bold;
 }
 
 .post {
@@ -324,7 +455,24 @@ body {
   display: block;
   width: 365px;
   height: 85px;
-  margin-top: 10px;
+  margin-top: 40px;
+  margin-right: 28px;
+  margin-bottom: 20px;
+  margin-left: 28px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.sub {
+  float: right;
+  width: 165px;
+  height: 45px;
+  bottom: 20px;
+  margin-right: 25px;
+  padding-top: -2px;
+  font-size: 18px;
+  line-height: 24px;
+  outline: 2px solid red;
 }
 
 .location {

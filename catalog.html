@@ -14,30 +14,35 @@
         <img src="img/Logo_154x64.svg" width="154" height="64" alt="Gllacy shop">
       </div>
       <nav class="main-navigation">
-        <ul>
+        <ul class="main-menu">
           <li>
-            <a href="#">Каталог</a>
+            <a href="#"><span class="underline">Каталог</span></a>
           </li>
           <li>
-            <a href="#">Доставка и оплата</a>
+            <a href="#"><span class="underline">Доставка и оплата</span></a>
           </li>
           <li>
-            <a href="#">О компании</a>
+            <a href="#"><span class="underline">О Компании</span></a>
           </li>
         </ul>
       </nav>
-      <div class="user-block">
-        <label>
-          <input class="search" type="button" value="Поиск">
-        </label>
-        <a class="login" href="#">Вход</a>
-        <a class="bascet" href="#">Корзина</a>
+      <div class="user-block  clearfix">
+        <div class="user-block-search">
+          <a class="search" href="#">Поиск</a>
+        </div>
+        <div class="user-block-login">
+          <a class="login" href="#">Вход</a>
+        </div>
+        <div class="user-block-cart">
+          <a class="cart-empty" href="#">Корзина</a>
+          <div class="modal-cart"></div>
+        </div>
       </div>
     </div>
     <div class="containerfix clearfix">
       <div class="block">
-        <p>С 10 до 20, ежедневно</p>
-        <p>8 812 450-25-25</p>
+          <p class="time">С 10 до 20, ежедневно</p>
+          <p class="phone">8 812 450-25-25</p>
       </div>
     </div>
   </header>
