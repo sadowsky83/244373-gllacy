@@ -855,22 +855,42 @@ body {
   margin-right: 15px;
 }
 
+select::-ms-expand {
+  opacity:0;
+}
+
 .choice-list {
   display: block;
   width: 193px;
   height: 36px;
   border-radius: 18px;
-  background-color: #a9bab0;
+  border: 0;
+  background:#a9bab0 url(../img/marker_white.png) no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 9px 5px;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
   padding-left: 10px;
   outline: none;
+  -webkit-appearance: none;
+       -moz-appearance: none;
+        -ms-appearance: none;
+         -o-appearance: none;
+            appearance: none;
+
 }
 
 .choice-list:hover {
   background-color: #ffffff;
   color: #000000;
+  background: #ffffff url(../img/marker_black.png) no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 9px 5px;
+}
+
+.choise-list::-ms-expand {
+    display: none;
 }
 
 .choice-cost {
