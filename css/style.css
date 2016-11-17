@@ -1464,6 +1464,8 @@ select::-ms-expand {
 
 .line {
   border-bottom: 1px solid #a9bbb1;
+  min-width: 860px;
+  max-width: 1150px;
   margin-right: 2.3%;
   margin-left: 2.3%;
 }
