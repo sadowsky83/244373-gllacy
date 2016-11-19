@@ -6,7 +6,7 @@
   <title>Gllacy Shop</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
@@ -114,16 +114,16 @@
           <label for="btn-3"></label>
         </div>
       </div>
-      <article class="gift">
+      <article class="gift clearfix">
         <section class="gift-left">
           <h2>Малинка даром!</h2>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья</p>
-          <a class="btn btn_gift" href="#">Хочу варенье!</a>
+          <a class="btn btn_gift_left" href="#">Хочу варенье!</a>
         </section>
         <section class="gift-right">
           <h2>Шоколадки даром!</h2>
           <p>При покупке 2 кг пломбира в ваш заказ упаковку вкуснейшей шоколадной присыпки</p>
-          <a class="btn btn_gift" href="#">Хочу шоколадки!</a>
+          <a class="btn btn_gift_right" href="#">Хочу шоколадки!</a>
         </section>
       </article>
 
@@ -177,40 +177,44 @@
               <span class="icecream-cost">415&#8381;<i>/кг</i></span>
             </div>
             <a class="icecream-name" href="#">
-              <h2 class="icecream-name-full">Сливочное крем-брюле с карамельной начинкой</h2>
+              <h2 class="icecream-name-full">Сливочное крем-брюле с карамельной подливкой</h2>
             </a>
             <a class="btn btn-preview" href="#">Быстрый просмотр</a>
           </div>
         </section>
         <div class="aboutus clearfix">
-          <h3 class="info-head">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого
+          <h3 class="info-head">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого
         собственного производства на развес</h3>
-          <div>
-            <div class="info">
-              <p class="info1">Все наше мороженое изготавливается на собственном проиводстве, с использованием современного оборудования и проверенных временем технологий.</p>
-            </div>
-            <div class="info">
-              <p class="info2">Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-            </div>
+          <div class="info-top clearfix">
+            <ul>
+              <li class="info icon-icecream">
+                <p>Все наше мороженое изготавливается на собственном проиводстве, с использованием современного оборудования и проверенных временем технологий.</p>
+              </li>
+              <li class="info icon-cow">
+                <p>Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+                </p>
+              </li>
+            </ul>
           </div>
-          <div>
-            <div class="info">
-              <p class="info3">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-              </p>
-            </div>
-            <div class="info">
-              <p class="info4">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.
-              </p>
-            </div>
+          <div class="info-bottom clearfix">
+            <ul>
+              <li class="info icon-leaf">
+                <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+              </li>
+              <li class="info icon-thermometer">
+                <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="news_post">
           <div class="news">
             <b>Новое в нашем блоге</b>
-            <a class="news_cont" href="#">10 способов сервировки
+            <div class="news-link"><a class="news_cont" href="#">10 способов сервировки
       фруктовых щербетов
       к столу
-      </a>
+    </a></div>
           </div>
           <div class="post">
             <div class="post-cont">
@@ -275,7 +279,7 @@
             </div>
             <div class="footer-copyright">
               <a class="html-academy-logo" href="https://htmlacademy.ru/">
-                <img src="img/academy_logo_108x38.png" alt="HTML Academy Logo">
+                <img src="img/academy_logo_108x38.png" width="108" height="38" alt="HTML Academy Logo">
               </a>
               <span>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> &#169;&nbsp;2016</span>
             </div>
