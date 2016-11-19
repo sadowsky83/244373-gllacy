@@ -146,7 +146,7 @@ body > input[type="radio"] {
   background-image: url("../img/icecream_slide_3_1079x854.png");
 }
 
-#btn-1:checked ~ .site-wrapper label[for="btn-1"], #btn-2:checked~.site-wrapper label[for="btn-2"], #btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+#btn-1:checked ~ .site-wrapper label[for="btn-1"], #btn-2:checked ~ .site-wrapper label[for="btn-2"], #btn-3:checked ~ .site-wrapper label[for="btn-3"] {
   background-color: #ffffff;
 }
 
@@ -706,7 +706,7 @@ body > input[type="radio"] {
   cursor: pointer;
 }
 
-.user-block-cart:hover>.cart-empty {
+.user-block-cart:hover > .cart-empty {
   display: block;
   position: relative;
   border-radius: 16px;
@@ -722,7 +722,7 @@ body > input[type="radio"] {
   background: #f8f7f4 no-repeat center center;
 }
 
-.user-block-cart:hover>.cart-empty::before {
+.user-block-cart:hover > .cart-empty::before {
   content: "";
   position: absolute;
   left: 16px;
@@ -1699,7 +1699,7 @@ select::-ms-expand {
   color: #999999;
 }
 
-.email-form>label {
+.email-form > label {
   position: absolute;
   transition: left 500ms, top 500ms, font-size 500ms, color 500ms;
   left: 35px;
@@ -1904,7 +1904,7 @@ select::-ms-expand {
   border: 1px solid #d3d3d2;
 }
 
-.feedback-name-block>label, .feedback-email-block>label, .feedback-text-block>label {
+.feedback-name-block > label, .feedback-email-block > label, .feedback-text-block > label {
   transition: left 500ms, top 500ms, font-size 500ms, color 500ms;
   position: absolute;
   left: 15px;
